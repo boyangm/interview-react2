@@ -6,9 +6,9 @@ const NavBar = (props) => {
     const {match} = props;
     return (
         <div className='navBar'>
-            <NavLink className='Links' to='/interview-react2/home/start'>Start Activity</NavLink>
-            <NavLink className='Links' to='/interview-react2/home/stop'>Stop Activity</NavLink>
-            <NavLink className='Links' to='/interview-react2/activity'>Stats</NavLink>
+            <NavLink className='Links' to='/home/start'>Start Activity</NavLink>
+            <NavLink className='Links' to='/home/stop'>Stop Activity</NavLink>
+            <NavLink className='Links' to='/activity'>Stats</NavLink>
         </div>
     )
 }
