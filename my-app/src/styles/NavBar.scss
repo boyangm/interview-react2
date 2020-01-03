@@ -1,0 +1,22 @@
+//CSS for Navbar
+.navBar{
+    @include default(100%);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    border-top: 1px solid lightgray;
+    padding: 20px 0;
+    align-self: center;
+    justify-content: space-evenly;
+    .Links{
+        text-decoration: none;
+        font-size: 1.25rem;
+        color: $base;
+        &.active{
+            color: lighten($complement, 20%);
+        }
+        &:hover{
+            color: lighten($complement, 20%);
+        }
+    }
+}

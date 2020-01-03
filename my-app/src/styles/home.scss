@@ -1,0 +1,68 @@
+.homeCont, .stopPanelCont{
+    @include default(100%);
+    flex-flow: column;
+    margin: 0 auto;
+    .title{
+        margin: 10px auto; 
+    }
+    .panel1Cont,
+    .panel2Cont,
+    .panel3Cont{
+        @include default(75%);
+        margin: 0 auto;
+        .panel1,
+        .panel2,
+        .panel3{
+            text-align: center;
+            @include default(100%);
+            flex-flow: column;
+            justify-content: space-evenly;
+            margin: 25px auto;
+            .err{
+                color: red;
+            }
+            p{
+                width: 100%;
+                margin: 10px auto;
+                padding: 10px 0;  
+            }
+            select{
+                font-size:1.25rem;
+            }
+            .formelem{
+                width: 100%;
+                margin: 10px auto;
+                padding: 10px 0;
+                // border-right: 1px solid lightgray;
+            }
+            label{
+                border-bottom: 1px solid lightgray;
+                font-weight: bold;
+            }
+            input{
+               width: 100%;
+               font-size: 1.5rem;
+            }
+            button{
+                width: 200px;
+                padding: 20px;
+                border-radius: 5px;
+                margin: 10px auto;
+                font-size: 1.25rem;
+                background: lighten($base, 20%);
+                color: lighten($complement, 20%);
+                &:hover{
+                    color: white;
+                    cursor: pointer;
+                }
+            }
+    
+        }
+    }
+    .panel2{
+        @include default(50%);
+        flex-flow: row nowrap;
+        margin: 25px auto ;
+
+    }
+}

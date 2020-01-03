@@ -1,0 +1,12 @@
+//mixins
+@mixin default($width){
+    position: relative;
+        display: flex;
+        width: $width;
+        font-family: $mainFont;
+        color: lighten($base, 10%);
+}
+//variables
+$mainFont: 'Karla', sans-serif;
+$base: rgb(26, 147, 187);
+$complement: complement($base);

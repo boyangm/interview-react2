@@ -1,0 +1,48 @@
+//CSS activity Table
+.activityCont{
+
+    @include default(100%);
+    margin: 0 auto;
+    flex-flow: column;
+    justify-content: center;
+    text-align: center;
+    h3{
+        margin-top: 20px;
+        font-size: 2rem;
+    }
+    table{
+        @include default(100%);
+        margin: 50px auto 0 ;
+        flex-flow: column;
+        justify-content: center;
+    }
+    thead{
+        @include default(100%);
+        margin: 20px 0;
+        tr{
+            @include default(100%);
+            border-bottom: 1px solid lightgray;
+            padding-bottom: 10px;
+            th{
+                width: 25%;
+            }
+        }
+    }
+    tbody{
+        @include default(100%);
+        flex-flow: column;
+        margin: 20px 0;
+        tr{
+            @include default(100%);
+            justify-content: space-evenly;
+            padding: 10px 0;
+            border-bottom: 1px solid lightgray;
+            td{
+                width: 25%;
+            }
+        }
+
+    }
+
+
+}
