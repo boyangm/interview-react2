@@ -10,10 +10,10 @@ const App = (props)  =>{
 
    <BrowserRouter>
    <Switch>
-     <Route exact path ='/' render ={(props)=> <Redirect {...props} to ='/home/start'/>} />
-     <Route exact path ='/home/start' component = {Home}/>
-     <Route exact path ='/activity' component = {Panel2}/>
-     <Route path ='/home/stop' component = {StopPanel}/>
+     <Route exact path ='/interview-react2/' render ={(props)=> <Redirect {...props} to ='/interview-react2/home/start'/>} />
+     <Route exact path ='/interview-react2/home/start' component = {Home}/>
+     <Route exact path ='/interview-react2/activity' component = {Panel2}/>
+     <Route path ='/interview-react2/home/stop' component = {StopPanel}/>
    </Switch>
     <NavBar></NavBar>
    </BrowserRouter>

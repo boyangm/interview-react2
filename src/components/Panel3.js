@@ -10,7 +10,7 @@ const Panel3 = () => {
     //Hooks
 
     const [options, setOptions] = useState(0)
-    const [description, setDescription] = useState(activities[0].description)
+    const [description, setDescription] = useState('')
     //handles state of Select/Option (LOCAL)
     const handleChange = (event) => {
         const { value } = event.target
