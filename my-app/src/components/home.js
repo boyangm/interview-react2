@@ -2,12 +2,12 @@ import React from 'react'
 import Panel1 from './Panel1'
 import Panel2 from './Panel2'
 
-const Home = (props) => {
+const Home = () => {
     
     return (
         <div>
-            <Panel1 {...props}></Panel1>
-            <Panel2 {...props}></Panel2>
+            <Panel1 ></Panel1>
+            <Panel2></Panel2>
 
 
         </div>
