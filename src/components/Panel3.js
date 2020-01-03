@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react'
+import React, { useState, useContext , useEffect } from 'react'
 import { WebState } from './appstate'
 
 //Panel for stopping Activity
@@ -20,6 +20,13 @@ const Panel3 = () => {
 
     }
 
+    useEffect(() =>{
+        if(activities.length < 1){
+            setDescription('')
+        }else{
+            setDescription(activities[0].description) 
+        }
+    })
     //sends index of activity and endTime back to Webstate
     const endActivity = (event, key) => {
         event.preventDefault()
