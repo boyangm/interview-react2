@@ -26,7 +26,7 @@ const Panel3 = () => {
         }else{
             setDescription(activities[0].description) 
         }
-    })
+    },[])
     //sends index of activity and endTime back to Webstate
     const endActivity = (event, key) => {
         event.preventDefault()
